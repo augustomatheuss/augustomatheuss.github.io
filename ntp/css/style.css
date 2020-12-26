@@ -33,6 +33,17 @@ img {
   height: auto;
 }
 
+.thumbnail{
+    width : 90%;
+    height: 90%;
+    overflow: auto;
+}
+
+.thumbnail img{
+    width : 90%;
+    height: 90%;
+    overflow: auto;
+  }
 /* Lists
 ---------------------------------- */
 ul {
