@@ -49,9 +49,16 @@
     <!-- Discord button to copy the user to clipboard -->
     <script>
       function discord2Clipboard() {
-        var data = new DataTransfer();
-        data.items.add("augustodamasceno#2263", "text/plain");
-        navigator.clipboard.write(data);
+        let data = [new ClipboardItem({ "text/plain": "augustodamasceno#2263" })];
+
+         navigator.clipboard.write(data).then(function() {
+           /* success */
+         }, function() {
+           /* failure */
+         });
+        //var data = new DataTransfer();
+        //data.items.add("augustodamasceno#2263", "text/plain");
+        //navigator.clipboard.write(data);
       }
     </script>
   </head>
